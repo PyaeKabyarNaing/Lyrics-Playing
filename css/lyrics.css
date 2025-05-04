@@ -1,0 +1,46 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #121212;
+  color: white;
+  font-family: "Arial", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.lyrics-container {
+  width: 80%;
+  max-width: 600px;
+  height: 300px;
+  border: 1px solid #333;
+  border-radius: 8px;
+  overflow: hidden;
+  position: relative;
+  background-color: #1e1e1e;
+}
+
+.lyrics-display {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  padding: 20px;
+  box-sizing: border-box;
+  text-align: center;
+  font-size: 24px;
+  line-height: 1.5;
+  transition: transform 0.5s ease;
+}
+
+.lyrics-line {
+  margin: 10px 0;
+  opacity: 0.5;
+  transition: opacity 0.3s ease;
+}
+
+.lyrics-line.active {
+  opacity: 1;
+  font-weight: bold;
+  color: #1db954;
+}
