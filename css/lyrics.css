@@ -1,46 +1,32 @@
 body {
   margin: 0;
-  padding: 0;
-  background-color: #121212;
+  background: black;
   color: white;
-  font-family: "Arial", sans-serif;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-}
-
-.lyrics-container {
-  width: 80%;
-  max-width: 600px;
-  height: 300px;
-  border: 1px solid #333;
-  border-radius: 8px;
+  font-family: "Courier New", Courier, monospace;
   overflow: hidden;
-  position: relative;
-  background-color: #1e1e1e;
 }
 
-.lyrics-display {
+.lyric-container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.lyrics {
   position: absolute;
   width: 100%;
-  bottom: 0;
-  padding: 20px;
-  box-sizing: border-box;
   text-align: center;
-  font-size: 24px;
-  line-height: 1.5;
-  transition: transform 0.5s ease;
+  white-space: pre-line;
+  font-size: 1.5rem;
+  animation: scrollUp linear infinite;
 }
 
-.lyrics-line {
-  margin: 10px 0;
-  opacity: 0.5;
-  transition: opacity 0.3s ease;
-}
-
-.lyrics-line.active {
-  opacity: 1;
-  font-weight: bold;
-  color: #1db954;
+@keyframes scrollUp {
+  0% {
+    top: 100%;
+  }
+  100% {
+    top: -100%;
+  }
 }
