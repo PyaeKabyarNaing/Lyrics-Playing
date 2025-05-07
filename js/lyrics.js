@@ -1,20 +1,26 @@
-// Sample lyrics
-const lyricsText = `
-This is the first line
-Here comes the second
-Now we float into the third
-Feel the rhythm, feel the word
-
-Keep it going, don't stop now
-We're flying high, we'll show you how
-Just like credits on the screen
-These are lyrics in a dream
-`;
-
 const lyricsElement = document.getElementById("lyrics");
-lyricsElement.innerText = lyricsText;
 
-// Adjust animation duration based on line count
-const lineCount = lyricsText.split("\n").length;
-const durationPerLine = 2; // seconds per line
-lyricsElement.style.animationDuration = `${lineCount * durationPerLine}s`;
+const lyrics = [
+  { text: "Feels like a close, it's coming to", type: "eminem" },
+  { text: "Fuck am I gonna do?", type: "eminem" },
+  { text: "It's too late to start over", type: "sia" },
+  { text: "This is the only thing I, thing I know", type: "sia" },
+  { text: "I know what it was like, I was there once", type: "eminem" },
+  { text: "Single parent, strugglin' to find your place", type: "eminem" },
+  { text: "You wanna run away from home, but you can't", type: "eminem" },
+  { text: "Goin' through growing pains", type: "eminem" },
+  { text: "But you're gonna make it through, it's okay", type: "sia" },
+  { text: "Guts over fear", type: "sia" },
+];
+
+// Inject lyrics into scrolling div
+lyrics.forEach((line) => {
+  const div = document.createElement("div");
+  div.className = line.type; // class name for new div
+  div.textContent = line.text; //line by line lyrics
+  lyricsElement.appendChild(div);
+});
+
+// Set scroll animation speed
+const duration = lyrics.length * 2.5; // seconds
+lyricsElement.style.animationDuration = `${duration}s`;

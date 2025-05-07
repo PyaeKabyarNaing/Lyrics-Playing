@@ -1,16 +1,32 @@
 body {
   margin: 0;
-  background: black;
+  background-color: #000;
   color: white;
-  font-family: "Courier New", Courier, monospace;
-  overflow: hidden;
+  font-family: "Courier New", monospace;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.lyric-container {
+.wrapper {
+  display: flex;
+  align-items: center;
+  gap: 100px;
   position: relative;
-  width: 100%;
-  height: 100vh;
+}
+
+.singer-img {
+  height: 300px;
+}
+
+.lyric-box {
+  width: 500px;
+  height: 300px;
   overflow: hidden;
+  position: relative;
+  background: linear-gradient(to top, #111, #222);
+  padding: 10px;
 }
 
 .lyrics {
@@ -18,8 +34,31 @@ body {
   width: 100%;
   text-align: center;
   white-space: pre-line;
-  font-size: 1.5rem;
-  animation: scrollUp linear infinite;
+  font-size: 1.2rem;
+  animation: scrollUp linear forwards;
+}
+
+.progress-bar {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 5px;
+  background: red;
+  width: 0%;
+  transition: width 0.2s;
+}
+
+/* Special lyric styles */
+.eminem {
+  color: #f44;
+  text-shadow: 0 0 5px #f44;
+  animation: glitch 1s infinite step-end;
+}
+
+.sia {
+  color: #4ff;
+  text-shadow: 0 0 8px #4ff;
+  font-style: italic;
 }
 
 @keyframes scrollUp {
@@ -27,6 +66,25 @@ body {
     top: 100%;
   }
   100% {
-    top: -100%;
+    top: -200%;
+  }
+}
+
+@keyframes glitch {
+  0%,
+  100% {
+    transform: translate(0);
+  }
+  20% {
+    transform: translate(-1px, 1px);
+  }
+  40% {
+    transform: translate(2px, -1px);
+  }
+  60% {
+    transform: translate(-1px, 2px);
+  }
+  80% {
+    transform: translate(1px, -2px);
   }
 }
