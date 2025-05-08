@@ -1,0 +1,24 @@
+[
+  {
+    "time": 0.0,
+    "text": "Feels like a close, it's coming to",
+    "type": "eminem"
+  },
+  { "time": 3.38, "text": "Fuck am I gonna do?", "type": "eminem" },
+  { "time": 6.77, "text": "It's too late to start over", "type": "eminem" },
+  {
+    "time": 10.15,
+    "text": "This is the only thing I, thing I know",
+    "type": "eminem"
+  },
+  {
+    "time": 13.54,
+    "text": "Sometimes I feel like all I ever do is",
+    "type": "eminem"
+  },
+  {
+    "time": 16.92,
+    "text": "Find different ways to word the same, old song",
+    "type": "eminem"
+  }
+]

@@ -38,6 +38,18 @@ body {
   animation: scrollUp linear forwards;
 }
 
+.lyrics div {
+  font-size: 1.2rem;
+  padding: 10px;
+  opacity: 0.2;
+  transition: opacity 0.3s, transform 0.3s;
+}
+
+.lyrics div.highlight {
+  opacity: 1;
+  transform: scale(1.1);
+}
+
 .progress-bar {
   position: absolute;
   bottom: 0;
@@ -51,13 +63,13 @@ body {
 /* Special lyric styles */
 .eminem {
   color: #f44;
-  text-shadow: 0 0 5px #f44;
+  /* text-shadow: 0 0 5px #f44; */
   animation: glitch 1s infinite step-end;
 }
 
 .sia {
   color: #4ff;
-  text-shadow: 0 0 8px #4ff;
+  /* text-shadow: 0 0 8px #4ff; */
   font-style: italic;
 }
 
