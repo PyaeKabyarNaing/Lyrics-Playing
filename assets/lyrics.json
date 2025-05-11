@@ -1,24 +1,537 @@
 [
   {
-    "time": 0.0,
-    "text": "Feels like a close, it's coming to",
-    "type": "eminem"
-  },
-  { "time": 3.38, "text": "Fuck am I gonna do?", "type": "eminem" },
-  { "time": 6.77, "text": "It's too late to start over", "type": "eminem" },
-  {
-    "time": 10.15,
-    "text": "This is the only thing I, thing I know",
-    "type": "eminem"
+    "type": "eminem",
+    "time": "0.0",
+    "text": "Feels like a close, it's coming to"
   },
   {
-    "time": 13.54,
-    "text": "Sometimes I feel like all I ever do is",
-    "type": "eminem"
+    "type": "eminem",
+    "time": "4.0",
+    "text": "Fuck am I gonna do?"
   },
   {
-    "time": 16.92,
-    "text": "Find different ways to word the same, old song",
-    "type": "eminem"
+    "type": "eminem",
+    "time": "7.5",
+    "text": "It's too late to start over "
+  },
+  {
+    "type": "eminem",
+    "time": "11.0",
+    "text": "This is the only thing I, thing I know"
+  },
+  {
+    "type": "eminem",
+    "time": "14.0",
+    "text": "Sometimes I feel like all I ever do is"
+  },
+  {
+    "type": "eminem",
+    "time": "16.0",
+    "text": "Find different ways to word the same, old song"
+  },
+  {
+    "type": "eminem",
+    "time": "18.5",
+    "text": "Ever since I came along"
+  },
+  {
+    "type": "eminem",
+    "time": "20.0",
+    "text": "From the day the song called 'Hi, My Name Is' dropped"
+  },
+  {
+    "type": "eminem",
+    "time": "22.0",
+    "text": "Started thinkin' my name was Fault"
+  },
+  {
+    "type": "eminem",
+    "time": "23.5",
+    "text": "'Cause any time things went wrong"
+  },
+  {
+    "type": "eminem",
+    "time": "25.5",
+    "text": "I was the one who they would blame it on"
+  },
+  {
+    "type": "eminem",
+    "time": "27.0",
+    "text": "The media made me the equivalent of a modern-day Genghis Khan"
+  },
+  {
+    "type": "eminem",
+    "time": "30.5",
+    "text": "Tried to argue it was only entertainment, dog"
+  },
+  {
+    "type": "eminem",
+    "time": "33.0",
+    "text": "Gangster? Nah, courageous balls"
+  },
+  {
+    "type": "eminem",
+    "time": "34.5",
+    "text": "Had to change my style, they said I'm way too soft"
+  },
+  {
+    "type": "eminem",
+    "time": "37.5",
+    "text": "And I sound like AZ and Nas, out came the claws"
+  },
+  {
+    "type": "eminem",
+    "time": "40.0",
+    "text": "And the fangs been out since then"
+  },
+  {
+    "type": "eminem",
+    "time": "41.0",
+    "text": "But up until the instant that I went against it"
+  },
+  {
+    "type": "eminem",
+    "time": "44.0",
+    "text": "It was ingrained in me that I wouldn't amount to a shit stain I thought"
+  },
+  {
+    "type": "eminem",
+    "time": "47.0",
+    "text": "No wonder I had to unlearn everything my brain was taught"
+  },
+  {
+    "type": "eminem",
+    "time": "49.5",
+    "text": "'Do I really belong in this game?'' I pondered"
+  },
+  {
+    "type": "eminem",
+    "time": "50.5",
+    "text": "I just wanna play my part, should I make waves or not?"
+  },
+  {
+    "type": "eminem",
+    "time": "53.7",
+    "text": "So back and forth in my brain, the tug-o-war wages on"
+  },
+  {
+    "type": "eminem",
+    "time": "56.0",
+    "text": "And I don't wanna seem ungrateful or disrespect the art form I was raised upon"
+  },
+  {
+    "type": "eminem",
+    "time": "60.0",
+    "text": "But sometimes you gotta take a loss"
+  },
+  {
+    "type": "eminem",
+    "time": "61.0",
+    "text": "And have people rub it in your face before you get made pissed off"
+  },
+  {
+    "type": "eminem",
+    "time": "64.0",
+    "text": "You keep pluggin', it's your only outlet"
+  },
+  {
+    "type": "eminem",
+    "time": "64.5",
+    "text": "And your only outfit so you know they're gonna talk about it"
+  },
+  {
+    "type": "eminem",
+    "time": "68.0",
+    "text": "Better find a way to counter it quick and make it, ah"
+  },
+  {
+    "type": "eminem",
+    "time": "71.5",
+    "text": "Feel like I've already said this a kabillion eighty times"
+  },
+  {
+    "type": "eminem",
+    "time": "74.0",
+    "text": "How many times can I say the same thing different ways that rhyme?"
+  },
+  {
+    "type": "eminem",
+    "time": "77.0",
+    "text": "What I really wanna say is if there's anyone else that can relate to my story"
+  },
+  {
+    "type": "eminem",
+    "time": "80.5",
+    "text": "Bet you feel the same way I felt when I was in the same place you are When I was afraid to"
+  },
+  {
+    "type": "sia",
+    "time": "82.0",
+    "text": "I was a... afraid to make a single sound"
+  },
+  {
+    "type": "sia",
+    "time": "87.5",
+    "text": "Afraid I would never find a way out"
+  },
+  {
+    "type": "sia",
+    "time": "91.0",
+    "text": "Afraid I'd never be found (my dream)"
+  },
+  {
+    "type": "sia",
+    "time": "94.5",
+    "text": "I don't wanna go another round (but I won't)"
+  },
+  {
+    "type": "sia",
+    "time": "98.5",
+    "text": "An angry man's power will shut you up"
+  },
+  {
+    "type": "sia",
+    "time": "102.0",
+    "text": "Trip wires fill this house with tip-toed love"
+  },
+  {
+    "type": "sia",
+    "time": "104.7",
+    "text": "Run out of excuses for everyone"
+  },
+  {
+    "type": "sia",
+    "time": "108.6",
+    "text": "So here I am and I will not run"
+  },
+  {
+    "type": "sia",
+    "time": "113.5",
+    "text": "Guts over fear (the time is near)"
+  },
+  {
+    "type": "sia",
+    "time": "120.0",
+    "text": "Guts over fear (might shed a tear)"
+  },
+  {
+    "type": "sia",
+    "time": "127.0",
+    "text": "For all the times I let you push me round"
+  },
+  {
+    "type": "sia",
+    "time": "130.5",
+    "text": "I let you keep me down"
+  },
+  {
+    "type": "sia",
+    "time": "132.0",
+    "text": "Now I got"
+  },
+  {
+    "type": "sia",
+    "time": "134.0",
+    "text": "Guts over fear"
+  },
+  {
+    "type": "sia",
+    "time": "136.0",
+    "text": "Guts over fear"
+  },
+  {
+    "type": "eminem",
+    "time": "140.0",
+    "text": "Feels like a close, it's coming to"
+  },
+  {
+    "type": "eminem",
+    "time": "143.0",
+    "text": "Fuck am I gonna do?"
+  },
+  {
+    "type": "eminem",
+    "time": "146.5",
+    "text": "It's too late to start over"
+  },
+  {
+    "type": "eminem",
+    "time": "151.0",
+    "text": "This is the only thing I, thing I know"
+  },
+  {
+    "type": "eminem",
+    "time": "154.0",
+    "text": "I know what it was like, I was there once, single parents"
+  },
+  {
+    "type": "eminem",
+    "time": "156.0",
+    "text": "Hate your appearance, did you struggle to find your place in this world?"
+  },
+  {
+    "type": "eminem",
+    "time": "159.0",
+    "text": "And the pain spawns all the anger on"
+  },
+  {
+    "type": "eminem",
+    "time": "161.0",
+    "text": "But it wasn't 'til I put the pain in song learned who to aim it on"
+  },
+  {
+    "type": "eminem",
+    "time": "164.0",
+    "text": "That I made a spark, started to spit harder"
+  },
+  {
+    "type": "eminem",
+    "time": "165.0",
+    "text": "Shit-learned how to harness it while the reins were off"
+  },
+  {
+    "type": "eminem",
+    "time": "169.0",
+    "text": "And there was a lot of bizarre shit, but the crazy part"
+  },
+  {
+    "type": "eminem",
+    "time": "171.0",
+    "text": "Was soon as I stopped saying 'I gave a fuck'"
+  },
+  {
+    "type": "eminem",
+    "time": "172.0",
+    "text": "Haters started to appreciate my art"
+  },
+  {
+    "type": "eminem",
+    "time": "175.0",
+    "text": "And it just breaks my heart to look at all the pain I caused"
+  },
+  {
+    "type": "eminem",
+    "time": "176.5",
+    "text": "But what am I gonna do when the rage is gone?"
+  },
+  {
+    "type": "eminem",
+    "time": "178.5",
+    "text": "And the lights go out in that trailer park?"
+  },
+  {
+    "type": "eminem",
+    "time": "180.5",
+    "text": "And the window is closing and there's nowhere else that I can go with flows"
+  },
+  {
+    "type": "eminem",
+    "time": "183.5",
+    "text": "And I'm frozen 'cause there's no more emotion for me to pull from"
+  },
+  {
+    "type": "eminem",
+    "time": "186.0",
+    "text": "Just a bunch of playful songs that I make for fun"
+  },
+  {
+    "type": "eminem",
+    "time": "188.4",
+    "text": "So to the break of dawn"
+  },
+  {
+    "type": "eminem",
+    "time": "190.0",
+    "text": "Here I go recycling the same old song"
+  },
+  {
+    "type": "eminem",
+    "time": "191.8",
+    "text": "But I'd rather make 'Not Afraid 2'"
+  },
+  {
+    "type": "eminem",
+    "time": "193.0",
+    "text": "Than make another motherfucking 'We Made You', uh"
+  },
+  {
+    "type": "eminem",
+    "time": "195.0",
+    "text": "And I don't wanna seem indulgent when I discuss my lows and my highs"
+  },
+  {
+    "type": "eminem",
+    "time": "198.5",
+    "text": "My demise and my uprise, pray to God"
+  },
+  {
+    "type": "eminem",
+    "time": "200.0",
+    "text": "I just opened enough eyes later on"
+  },
+  {
+    "type": "eminem",
+    "time": "202.0",
+    "text": "Gave you the supplies and the tools to hopefully use that'll make you strong"
+  },
+  {
+    "type": "eminem",
+    "time": "205.2",
+    "text": "Enough to lift yourself up when you feel like I felt"
+  },
+  {
+    "type": "eminem",
+    "time": "206.9",
+    "text": "Cause I can't explain to y'all how dang exhausted my legs felt"
+  },
+  {
+    "type": "eminem",
+    "time": "210.0",
+    "text": "Just havin' to balance my dang self"
+  },
+  {
+    "type": "eminem",
+    "time": "212.0",
+    "text": "When on eggshells I was made to walk"
+  },
+  {
+    "type": "eminem",
+    "time": "214.0",
+    "text": "But thank you, ma, 'cause that gave me the"
+  },
+  {
+    "type": "eminem",
+    "time": "215.4",
+    "text": "Strength to cause Shady-mania"
+  },
+  {
+    "type": "eminem",
+    "time": "217.6",
+    "text": "So when they empty that stadium"
+  },
+  {
+    "type": "eminem",
+    "time": "219.0",
+    "text": "Least I made it out of that house and found a place"
+  },
+  {
+    "type": "eminem",
+    "time": "220.4",
+    "text": "in this world when the day was done"
+  },
+  {
+    "type": "eminem",
+    "time": "222.0",
+    "text": "So this is for every kid"
+  },
+  {
+    "type": "eminem",
+    "time": "223.4",
+    "text": "who all's they ever did was dreamt of"
+  },
+  {
+    "type": "eminem",
+    "time": "225.0",
+    "text": "one day just getting accepted"
+  },
+  {
+    "type": "eminem",
+    "time": "225.9",
+    "text": "I represent him or her, anyone similar"
+  },
+  {
+    "type": "eminem",
+    "time": "228.0",
+    "text": "You are the reason that I made this song"
+  },
+  {
+    "type": "eminem",
+    "time": "230.3",
+    "text": "And everything you're scared to say don't be afraid to say no more"
+  },
+  {
+    "type": "eminem",
+    "time": "233.0",
+    "text": "From this day forward, just let them a-holes talk"
+  },
+  {
+    "type": "eminem",
+    "time": "235.5",
+    "text": "Take it with a grain of salt and eat their fuckin' faces off"
+  },
+  {
+    "type": "eminem",
+    "time": "239.0",
+    "text": "The legend of the angry blonde lives on through you when I'm gone And to think I was a"
+  },
+  {
+    "type": "sia",
+    "time": "242.0",
+    "text": "I was a..."
+  },
+  {
+    "type": "sia",
+    "time": "245.0",
+    "text": "Afraid to make a single sound"
+  },
+  {
+    "type": "sia",
+    "time": "247.5",
+    "text": "Afraid I would never find a way o-o-out"
+  },
+  {
+    "type": "sia",
+    "time": "251.0",
+    "text": "Afraid I'd never be found (my dream)"
+  },
+  {
+    "type": "sia",
+    "time": "254.0",
+    "text": "I don't wanna go another round (but I won't)"
+  },
+  {
+    "type": "sia",
+    "time": "257.5",
+    "text": "An angry man's power will shut you up"
+  },
+  {
+    "type": "sia",
+    "time": "261.2",
+    "text": "Trip wires fill this house with tip toed love"
+  },
+  {
+    "type": "sia",
+    "time": "264.5",
+    "text": "Run out of excuses for everyone"
+  },
+  {
+    "type": "sia",
+    "time": "268.0",
+    "text": "So here I am and I will not run"
+  },
+  {
+    "type": "sia",
+    "time": "272.9",
+    "text": "Guts over fear (the time is near)"
+  },
+  {
+    "type": "sia",
+    "time": "280.0",
+    "text": "Guts over fear (might shed a tear)"
+  },
+  {
+    "type": "sia",
+    "time": "286.6",
+    "text": "For all the times I let you push me round"
+  },
+  {
+    "type": "sia",
+    "time": "290.0",
+    "text": "I let you keep me down"
+  },
+  {
+    "type": "sia",
+    "time": "292.0",
+    "text": "Now I got, guts over fear, guts over fear"
   }
 ]

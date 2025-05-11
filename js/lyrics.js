@@ -1,76 +1,56 @@
 const lyricsElement = document.getElementById("lyrics");
 const audio = document.getElementById("audio");
 const progressBar = document.getElementById("progress");
+const lyricBox = document.querySelector(".lyric-box");
 
-const lyrics = [
-  { time: 0.0, text: "Feels like a close, it's coming to", type: "eminem" },
-  { time: 3.38, text: "Fuck am I gonna do?", type: "eminem" },
-  { time: 6.77, text: "It's too late to start over", type: "eminem" },
-  {
-    time: 10.15,
-    text: "This is the only thing I, thing I know",
-    type: "eminem",
-  },
-  {
-    time: 13.54,
-    text: "Sometimes I feel like all I ever do is",
-    type: "eminem",
-  },
-  {
-    time: 16.92,
-    text: "Find different ways to word the same, old song",
-    type: "eminem",
-  },
-  { time: 20.3, text: "Ever since I came along", type: "eminem" },
-  {
-    time: 23.69,
-    text: 'From the day the song called "Hi, My Name Is" dropped',
-    type: "eminem",
-  },
-  { time: 27.07, text: "Started thinkin' my name was Fault", type: "eminem" },
-  { time: 30.46, text: "'Cause any time things went wrong", type: "eminem" },
-  // ... continues up to ~345s
-];
+let lyrics = [];
+const lineHeight = 40;
 
-// Inject lyrics into scrolling div
-lyrics.forEach((line) => {
-  const div = document.createElement("div");
-  div.className = line.type; // class name for new div
-  div.textContent = line.text; //line by line lyrics
-  lyricsElement.appendChild(div);
-});
+async function fetchLyrics() {
+  try {
+    const response = await fetch('../assets/lyrics.json');
+    lyrics = await response.json();
+    injectLyrics();
+  } catch (error) {
+    console.error('Error fetching lyrics:', error);
+  }
+}
 
-// Set scroll animation speed
-const duration = lyrics.length * 2.5; // seconds
-lyricsElement.style.animationDuration = `${duration}s`;
+function injectLyrics() {
+  lyrics.forEach((line) => {
+    const div = document.createElement("div");
+    div.className = line.type;         // "eminem" or "sia"
+    div.textContent = line.text;
+    lyricsElement.appendChild(div);
+  });
 
-// Sync progress bar with audio
+  const duration = lyrics.length * 2.5; // just for scroll animation if used
+  lyricsElement.style.animationDuration = `${duration}s`;
+}
+
+// Sync lyrics scrolling and highlight with audio
 audio.addEventListener("timeupdate", () => {
-  const percent = (audio.currentTime / audio.duration) * 100;
+  const currentTime = audio.currentTime;
+
+  let currentIndex = lyrics.findIndex((line, i) => {
+    const next = lyrics[i + 1];
+    return currentTime >= line.time && (!next || currentTime < next.time);
+  });
+
+  if (currentIndex === -1) currentIndex = lyrics.length - 1;
+
+  const scrollY = lineHeight * currentIndex - lyricBox.clientHeight / 2 + lineHeight / 2;
+  lyricsElement.style.top = `-${scrollY}px`;
+
+  // Highlight the active line
+  document.querySelectorAll('#lyrics div').forEach((div, i) => {
+    div.classList.toggle("highlight", i === currentIndex);
+  });
+
+  // Update progress bar
+  const percent = (currentTime / audio.duration) * 100;
   progressBar.style.width = percent + "%";
 });
 
-// Highlight line near the middle
-const lyricBox = document.querySelector(".lyric-box"); //lyrics container
-
-function highlightCurrentLine() {
-  const lines = document.querySelectorAll("#lyrics div");
-  const boxCenter =
-    lyricBox.getBoundingClientRect().top + lyricBox.offsetHeight / 2;
-
-  lines.forEach((line) => {
-    const rect = line.getBoundingClientRect();
-    const lineCenter = rect.top + rect.height / 2;
-    const distance = Math.abs(boxCenter - lineCenter);
-
-    if (distance < 20) {
-      line.classList.add("highlight");
-    } else {
-      line.classList.remove("highlight");
-    }
-  });
-
-  requestAnimationFrame(highlightCurrentLine);
-}
-
-requestAnimationFrame(highlightCurrentLine);
+// Start everything
+fetchLyrics();

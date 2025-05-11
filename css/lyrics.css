@@ -55,7 +55,7 @@ body {
   bottom: 0;
   left: 0;
   height: 5px;
-  background: red;
+  background: linear-gradient(to right, #9a003e, #ff6ba6);
   width: 0%;
   transition: width 0.2s;
 }
@@ -73,16 +73,19 @@ body {
   font-style: italic;
 }
 
-@keyframes scrollUp {
+audio {
+  margin-top: 20px;
+}
+/* @keyframes scrollUp {
   0% {
     top: 100%;
   }
   100% {
     top: -200%;
   }
-}
+} */
 
-@keyframes glitch {
+/* @keyframes glitch {
   0%,
   100% {
     transform: translate(0);
@@ -99,4 +102,4 @@ body {
   80% {
     transform: translate(1px, -2px);
   }
-}
+}  */
